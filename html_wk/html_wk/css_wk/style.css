@@ -19,5 +19,6 @@ width: 20%;
 border-radius: 100%;
 } 
 body{
-background-color: rebeccapurple;
+
+background:url('../imgs/jeep3.jpg');
 }     
