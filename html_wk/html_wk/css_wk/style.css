@@ -1,0 +1,23 @@
+.p1
+{
+    color: blanchedalmond;
+    background-color:#e84393 ;text-align:left           
+    }
+    .center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.clm
+{
+flex: 33.33%;
+padding: 2px;
+height: 20%;
+width: 20%;
+border-radius: 100%;
+} 
+body{
+background-color: rebeccapurple;
+}     
