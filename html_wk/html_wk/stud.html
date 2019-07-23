@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Student Registration Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body >
     
     <h1>Student Registration Form</h1>
-    <table>
+    <table class="table">
         <tr>
             <td>
                 <label for="lb2">Name</label>
             </td>
             <td>
-                <input type="text" name="Name" id="nam1"/>
+                <input type="text" name="Name" id="nam1" class="form-control"/>
             
             </td>
         </tr>
@@ -28,7 +29,7 @@
             <td>
                 <label for="lb2"> Branch</label>
             </td>
-            <td><select name="Branch" id="branch1">
+            <td><select name="Branch" id="branch1" class="form-control">
                 <option value="Computer sceince">Computer sceince</option>
                 <option value="Electrical">Electrical</option>
                 <option value="Electronics">Electronics</option>
@@ -47,14 +48,14 @@
         </tr>
         <tr>
             <td>
-                <label for="lb2">Age</label>
+                <label for="lb2" >Age</label>
             </td>
             <td>
                 <input type="number" min="0" max="100" name="age" id="age">
             </td>
         </tr>
         <tr>
-            <td><input type="checkbox">agree with the terms and conditions of the college
+            <td><input type="checkbox" class="checkbox-inline">agree with the terms and conditions of the college
 
             </td>
         </tr>
@@ -62,7 +63,7 @@
         <tr>
             <td></td>
             <td>
-                <input type="button" value="submit">
+                <input type="button" value="submit" class="btn btn-primary">
             </td>
         </tr>
         

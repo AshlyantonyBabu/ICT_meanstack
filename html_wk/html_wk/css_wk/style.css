@@ -25,6 +25,7 @@ background:url('../imgs/baby.jpg');
 }    
 .div1{
     border: 2px solid black;
+    border-radius: 100%;
     color: aqua;
     margin-top: 100px;
     text-align: center;
