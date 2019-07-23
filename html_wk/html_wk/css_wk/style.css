@@ -1,7 +1,8 @@
 .p1
 {
-    color: blanchedalmond;
-    background-color:#e84393 ;text-align:left           
+    color: rgb(218, 142, 28);
+    background-color:black;text-align:left ;
+    /*background: url('../imgs/baby.jpg')      */    
     }
     .center {
 display: block;
@@ -20,5 +21,11 @@ border-radius: 100%;
 } 
 body{
 
-background:url('../imgs/jeep3.jpg');
-}     
+background:url('../imgs/baby.jpg');
+}    
+.div1{
+    border: 2px solid black;
+    color: aqua;
+    margin-top: 100px;
+    text-align: center;
+} 
