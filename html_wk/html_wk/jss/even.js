@@ -1,8 +1,8 @@
 function funeven()
 {
-var n=document.forms["frm1"]["name"].value;
+//var n=document.forms["frm1"]["name"].value;
 
-   //var n1 = parseInt(document.getElementById("name").Value);
+  var n = parseInt(document.getElementById("name").Value);
    var n1=(n%2);
 if(n1==0)
 {

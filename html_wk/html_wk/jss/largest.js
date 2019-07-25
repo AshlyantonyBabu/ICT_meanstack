@@ -1,9 +1,17 @@
-var x=90;
-var y=89;
-if(x<y)
+
+
+function funlarge()
 {
-    console.log(y);
+
+var x=parseInt(document.getElementById("name").value);
+var y=parseInt(document.getElementById("name").value);
+console.log(x)
+
+if(x< y)
+{
+ document.getElementById("lb1").innerHTML= y;
 }
 else{
-    console.log(x);
+    document.getElementById("lb1").innerHTML= x;
+}
 }
