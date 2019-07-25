@@ -1,2 +1,4 @@
-var name="Ashly antony babu";
-console.log(name);
+
+var name=["Ashly antony babu","anu","jeni"];
+
+document.getElementById("lb1").innerHTML=name.toString();
