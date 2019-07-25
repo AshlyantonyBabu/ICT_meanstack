@@ -5,6 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Student Registration Form</title>
+    <script>
+        function funreg()
+        {
+           var na=document.getElementById("nam1").value;
+            
+          var  fe=document.getElementById("g1");
+                   
+           
+           var br=document.getElementById("branch1").value;
+           var da=document.getElementById("day1").value;
+           var ag=document.getElementById("age").value;
+          // var ch=document.getElementById("chek").value;
+           var x = document.getElementById("chek");
+            //var x=[na,br,da,ag,ch];
+            //var arr=x.toString;
+            //var arrr=[1,2,3];
+              //          for(var i=0;i<=arrr.length;i++)
+            //{
+              //  document.getElementById("lb").innerHTML=arrr[i];
+              if (document.getElementById('div1').checked) {
+ var rate_value = document.getElementById('div1').value;
+}
+              if(fe.checked)
+              {
+                var ma="FEmale";
+              }
+              else{
+                var ma="male";
+              }
+              if(x.checked)
+              {
+                var d="checked";
+
+          
+              }
+              else
+              {
+              var  d="unchecked";
+              }
+            //}
+document.getElementById("lb").innerHTML=na;
+document.getElementById("lb11").innerHTML=ma;
+document.getElementById("lb22").innerHTML=br;
+document.getElementById("lb33").innerHTML=da;
+document.getElementById("lb44").innerHTML=ag;
+document.getElementById("lb44").innerHTML=d;
+
+
+        }
+    </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body >
@@ -31,16 +81,18 @@
             </td>
         </tr>
         <tr>
-            <td><label for="gender">Gender</label></td>
-            <td><input type="radio" name="gender" id="g1">Female</td>
-            <td><input type="radio" name="gender" id="g1">Male</td>
+            <td><label for="gender" id="gen">Gender</label></td>
+            <div id="div1">
+            <td><input type="radio" name="gender" id="g1"value="Female">Female</td>
+            <td><input type="radio" name="gender" id="g2" value="male">Male</td>
+        </div>
         </tr>
         <tr>
             <td>
                 <label for="lb2"> Branch</label>
             </td>
             <td><select name="Branch" id="branch1" class="form-control">
-                <option value="Computer sceince">Computer sceince</option>
+                <option value="Computer sceince" >Computer sceince</option>
                 <option value="Electrical">Electrical</option>
                 <option value="Electronics">Electronics</option>
             </select></td>
@@ -52,7 +104,7 @@
                 </label>
             </td>
             <td>
-                <input type="date">
+                <input type="date" id="day1">
             </td>
         
         </tr>
@@ -65,7 +117,7 @@
             </td>
         </tr>
         <tr>
-            <td><input type="checkbox" class="checkbox-inline">agree with the terms and conditions of the college
+            <td><input type="checkbox" class="checkbox-inline"id="chek">agree with the terms and conditions of the college
 
             </td>
         </tr>
@@ -73,10 +125,18 @@
         <tr>
             <td></td>
             <td>
-                <input type="button" value="submit" class="btn btn-primary">
+                <input type="button" value="submit" class="btn btn-primary" onclick="funreg();">
             </td>
         </tr>
-        
+        <tr>
+<td>
+    <label for=""id="lb"></label>
+    <label for=""id="lb11"></label>
+    <label for=""id="lb22"></label>
+    <label for=""id="lb33"></label>
+    <label for=""id="lb44"></label>
+</td>
+        </tr>
     </table>
 </body>
 </html>
