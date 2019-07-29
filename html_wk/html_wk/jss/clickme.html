@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            count=0;
+            $("#c").click(function() {
+
+                count++;
+                $("#p1").text(" you clicked me "+count+"times");
+                if(count==10)
+                {
+                   
+                    $("#c").prop('disabled',true);
+                }
+
+            })
+        })
+    
+    
+    
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-6 " style="margin-top: 50px">
+                <button id="c" class="btn btn-success" > CLICK ME</button>
+</div>
+<div class="col col-6">
+    <p id="p1">
+
+    </p>
+</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
