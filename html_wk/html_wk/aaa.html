@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+
+</head>
+
+<body>
+       
+     <div id="div1"> 
+
+     </div>   
+     <script>
+            function add(a,b,callback){
+                c=a+b;
+                callback(c);
+            }
+            // function disply(result)
+            // {
+            //     console.log(result);
+            // document.getElementById("div1").innerHTML=result;
+            // }
+            add(10,20,(result)=>{
+                     console.log(result);
+            document.getElementById("div1").innerHTML=result;
+            });
+            
+            </script>
+</body>
+</html>
