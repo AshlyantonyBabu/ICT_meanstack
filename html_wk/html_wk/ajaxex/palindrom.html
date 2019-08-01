@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>palindrom</title>
+</head>
+<body>
+
+    <div>
+        <label id="lb">Enter a number</label>
+        <input type="text" id="txt1">
+        <button  type="button"id="btn1">submit</button>
+        <label id="lb2"></label>
+    </div>
+    <script>
+        $(document).ready(function(){
+            alert("load");
+            $("#btn1").click(function(){
+                
+                var n=$("#txt1").val();
+                
+               var k=n;
+               var rev=0;
+                while(n>0){
+                    
+                  var  rem=n%10;
+                    console.log(rem);
+                    rev=(rev*10)+rem;
+                    console.log(rev);
+                    n=Math.floor(n/10);
+                    console.log(n);
+
+                }
+                console.log(rev);
+                var mypromiss=new Promise((resolve,reject)=>{
+                    if(k==rev)
+                    {
+                        resolve();
+                        console.log("pali")
+                    }
+                    else{
+                        reject();
+                        console.log()
+                    }
+                    mypromiss.then(()=>{
+                        $("#lb2").text("palindrom");
+
+                    }).catch((result)=>{
+                        $("#lb2").text("Not palindrom");
+                    })
+                })
+            })
+        })
+    </script>
+</body>
+</html>
