@@ -88,25 +88,9 @@
     "discription":"Half Girlfriend is a story of Bihari boy Madhav, a Hindi speaking Bihari who falls in love with Riya, an influential Delhi girl on the campus of prestigious St. Stephen’s College. Madhav belongs to middle class family, while Riya is from higher class and both have different lifestyles. Madhav proposes her, but Riya rejects the proposal because she thinks they are good as a friend only.",
     "price":370,
     "pic":"./bkimg/LB010.jpg"
-},
-{
-    "id":"LB011",
-    "title":" ",
-    "author":" ",
-    "category":"biographies & memoirs",
-    "discription":"",
-    "price":370,
-    "pic":"./bkimg/LB011.jpg"
-},
-{
-    "id":"LB011",
-    "title":" ",
-    "author":" ",
-    "category":"biographies & memoirs",
-    "discription":"",
-    "price":370,
-    "pic":"./bkimg/LB012.jpg"
 }
+
+
 
 
 ]

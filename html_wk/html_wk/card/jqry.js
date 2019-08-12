@@ -24,7 +24,7 @@ $(document).ready(function(){
             
             
                 
-            alert("load");
+           // alert("load");
             for(var i in data){
                 var content =  data[i].discription;
                 function blink_text() {
